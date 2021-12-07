@@ -27,21 +27,35 @@ MFA requires the combination of the following:
 The IT requirements are the following:
 
 \begin{itemize}
-\item Add and extra layer of security to the VPN connection.
-\item This can be an OTP or a "push" notification to an smartphone
-\item Compatibility with our systems
-\item Minor changes on our infrastructure for deployment
-\end{itemize}
-
-\newpage
-\section{Alternatives}
-
-\subsection{FreeIPA + OTP}
-\subsection{DUO Authentication}
-\subsection{Comparison}
-
-\newpage
-\section{Final Toughs}
+  \item Add and extra layer of security to the VPN connection.
+  \item This can be an OTP or a "push" notification to an smartphone
+  \item Compatibility with our systems
+  \item Minor changes on our infrastructure for deployment
+  \end{itemize}
+  
+  \newpage
+  
+  \section{Diagrams}
+  
+  \begin{figure}[!h]
+      \centering
+      \includegraphics[width=160mm]{images/Pfsense - FreeIPA.drawio.png}
+      \caption{OpenVPN + FreeIPA Authentication Server}
+      \label{fig:label}
+  \end{figure}
+  
+  
+  
+  \newpage
+  \section{Alternatives}
+  
+  \subsection{FreeIPA + OTP}
+  FreeIPA is a free and opensource Identity Managment System, aims to provide a centrally managed Identity, Policy and Audit (IPA)
+  \subsection{DUO Authentication}
+  \subsection{Comparison}
+  
+  \newpage
+  \section{Final Toughs}
 
 
 
