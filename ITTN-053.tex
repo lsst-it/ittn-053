@@ -1,4 +1,4 @@
-\documentclass[PMO,authoryear,toc]{lsstdoc}
+\documentclass[PMO,lsstdraft,authoryear,toc]{lsstdoc}
 % lsstdoc documentation: https://lsst-texmf.lsst.io/lsstdoc.html
 \input{meta}
 
@@ -10,7 +10,7 @@
 %\input{aglossary.tex}
 %\makeglossaries
 
-\title{Enable Two-factor Authentication For OpenVPN}
+\title{ Securing  VPN service with Multi-Factor Authentication }
 
 % Optional subtitle
 % \setDocSubtitle{A subtitle}
@@ -28,7 +28,7 @@ Hernán Stockebrand
 % \setDocCurator{The Curator of this Document}
 
 \setDocAbstract{%
-Activate two-factor authentication on VPN connection for Rubin Observatory Users.
+The Following documents details, alternatives to setup Multi-Factor authentication (\textbf{MFA}) for Rubin Observatory VPN users
 }
 
 % Change history defined here.
@@ -36,7 +36,7 @@ Activate two-factor authentication on VPN connection for Rubin Observatory Users
 % Fields: VERSION, DATE, DESCRIPTION, OWNER NAME.
 % See LPM-51 for version number policy.
 \setDocChangeRecord{%
-  \addtohist{1}{YYYY-MM-DD}{Unreleased.}{Hernán Stockebrand}
+  \addtohist{1}{2022-11-22}{Draft.}{Hernán Stockebrand}
 }
 
 
@@ -50,9 +50,12 @@ Activate two-factor authentication on VPN connection for Rubin Observatory Users
 % ADD CONTENT HERE
 % You can also use the \input command to include several content files.
 
+\input{introduction.tex}
+
 \appendix
 % Include all the relevant bib files.
 % https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
+\newpage
 \section{References} \label{sec:bib}
 \renewcommand{\refname}{} % Suppress default Bibliography section
 \bibliography{local,lsst,lsst-dm,refs_ads,refs,books}
