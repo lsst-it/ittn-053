@@ -97,17 +97,21 @@ So this can be a litle confusing to users, due to the way to write the password 
   \label{fig:label}
 \end{figure}
 
-\href{https://duo.com/}{Duo Security} is a security platform that provides push notifications to autorize or deny a user login, on our case a VPN connection.
+\href{https://duo.com/}{Duo Security} is a security platform that provides push notifications to authorize or deny a user log in, in our case, a VPN connection.
 
-Users can be syncronized to the Duo Dashboard, to automatically enroll users sending a Welcome Email, leting the user install and sync the account with the app on his smarthphone.
+Users can be synchronized to the Duo Dashboard to automatically enroll users by sending a Welcome Email, letting the user install and sync the account with the app on his smartphone.
 
-On this case a service called "Proxy" is need to be install on la machine inside the local network. On the OpenVPN configuration a change is needed on the authentication servers, now it need to be pointed to the proxy, so besides sending a ldap request to the local ldap server, it will request authization to the user via the app recently installed on this smartphone.
-
-Temporary Text
+In this case, a service called "Proxy" needs to be installed on la machine inside the local network. On the OpenVPN configuration, a change is needed on the authentication servers, now it needs to be pointed to the proxy, so besides sending a LDAP request to the local LDAP server.
 
 
 
+\newpage
 \subsection{Test}
+
+
+Once everything is configured, we put the username and password account when we open a new VPN session. A push notification (on the user smarthphone) will ask if we are trying to log in on the named service in the next seconds.
+Now is possible to choose between allowing or denying. Once we press allow, the VPN connection is established.
+
 
 
 \newpage
